@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.timerkt.main.MainActivity">
+
+    <item
+        android:id="@+id/action_edit"
+        android:title="edit"
+        android:visible="false"
+        android:icon="@drawable/ic_baseline_edit_24"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_save"
+        android:title="save"
+        android:visible="false"
+        android:icon="@drawable/ic_baseline_save_24"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom" />
+
+</menu>

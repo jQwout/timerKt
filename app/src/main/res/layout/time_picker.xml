@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.shawnlin.numberpicker.NumberPicker
+        android:id="@+id/tpMinutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tpMinutesDivider"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:np_dividerColor="@android:color/transparent"
+        app:np_dividerLength="40dp"
+        app:np_dividerThickness="3dp"
+        app:np_max="59"
+        app:np_min="0"
+        app:np_selectedTextColor="@color/colorPrimary"
+        app:np_selectedTextSize="32sp"
+        app:np_textColor="@android:color/black"
+        app:np_textSize="32sp" />
+
+    <com.shawnlin.numberpicker.NumberPicker
+        android:id="@+id/tpSeconds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tpMinutesDivider"
+        app:layout_constraintTop_toTopOf="parent"
+        app:np_dividerColor="@android:color/transparent"
+        app:np_dividerLength="40dp"
+        app:np_dividerThickness="3dp"
+        app:np_max="59"
+        app:np_min="0"
+        app:np_selectedTextColor="@color/colorPrimary"
+        app:np_selectedTextSize="32sp"
+        app:np_textColor="@android:color/black"
+        app:np_textSize="32sp"
+        />
+
+    <TextView
+        android:id="@+id/tpMinutesDivider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:textSize="36sp"
+        app:layout_constraintVertical_bias="0.46"
+        app:layout_constraintBottom_toBottomOf="@+id/tpMinutes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tpMinutes" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
